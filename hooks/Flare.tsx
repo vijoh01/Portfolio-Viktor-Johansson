@@ -7,7 +7,7 @@ const Flare = () => {
   const [isAboveElement, setIsAboveElement] = useState(false);
   const [targetElement, setTargetElement] = useState(null);
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = (e:any) => {
     setPosition({ x: e.clientX, y: e.clientY });
   };
 
@@ -35,7 +35,7 @@ const Flare = () => {
       }
     };
 
-    const target = document.getElementById('target-element'); 
+    const target:any = document.getElementById('target-element'); 
     setTargetElement(target);
 
     if (target) {
