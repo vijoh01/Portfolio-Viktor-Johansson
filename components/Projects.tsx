@@ -37,8 +37,9 @@ export default function Projects() {
       id="section-4"
       className="flex items-center  min-h-screen overflow-hidden bg-fixed pt-10 lg:pt-0 flex-col text-[#000] dark:text-secondary-500"
     >
-      <div className='mt-auto mb-auto flex text-center flex-col z-10'>
-      <h1 className='text-center text-3xl'>Projects</h1>
+      <div className='min-w-[20rem]  flex text-center justify-center flex-col z-10 mt-10 md:mt-auto md:mb-auto w-screen max-w-[100rem]'>
+      <h1 className='text-center text-3xl '>Projects</h1>
+      
       <div className="p-5 flex  min-w-[20rem] justify-center overflow-hidden overflow-x-hidden flex-col sm:flex-row flex-wrap w-screen max-w-[100rem]"
       >
       

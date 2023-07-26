@@ -58,7 +58,7 @@ export default function Nav() {
 
   function test() {
     return (
-      <div className="overflow-hidden min-h-screen mt-12 w-40 fixed z-40 bg-secondary-50 dark:bg-primary-900 text-primary-900 dark:text-secondary-400 flex flex-col justify-between">
+      <div className="overflow-hidden min-h-screen w-40 fixed z-40 bg-secondary-50 dark:bg-primary-900 text-primary-900 dark:text-secondary-400 flex flex-col justify-between">
       <div className="text-3xl flex flex-col mb-5 font-bold">
         {iconsData.map((link) => (
           <div onClick={() => {setActiveNav(true); setActiveSection(link.label);}}>

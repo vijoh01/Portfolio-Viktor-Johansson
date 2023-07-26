@@ -5,6 +5,7 @@ import { BiUpArrowAlt } from 'react-icons/bi'
 import ScrollLink from '@/hooks/ScrollLink'
 import { useState } from 'react'
 import { sendContactForm } from '@/lib/api';
+import Line from '@/assets/Line';
 
 const initValues = {name: "", email: "", msg: ""};
 const initState = {values: initValues};
@@ -63,7 +64,7 @@ export default function Contact() {
 
     return (
         <main id="section-5" className='flex items-center min-h-screen  bg-fixed pt-10 lg:pt-0  flex-col justify-between text-[#000] dark:text-secondary-500 '>
-            <div className=" p-5 flex flex-col w-[22rem] md:w-[42rem] bg-[#d0b7b2] dark:bg-[#1c1c1c] pb-5 items-center justify-center mt-auto mb-auto z-10">
+            <div className="pt-5 flex flex-col w-[22rem] md:w-[42rem] bg-[#d0b7b2] dark:bg-[#1c1c1c] items-center justify-center mt-auto mb-auto z-10">
             <h1 className='pb-3 text-3xl md:text-4xl'>Get in touch</h1>
               <form className='flex flex-col justify-center w-[70%]'>
                 <label className='ml-1' htmlFor="email">Name</label>
@@ -76,12 +77,14 @@ export default function Contact() {
                 <textarea name="msg" id="msg" className='pl-1 max-h-52 min-h-[3rem] text-[#000]' value={values.msg} placeholder='Hey! Im reaching out because..' onChange={handleChange}/>
 
                 <button onClick={onSubmit} className='w-full bg-[#101010] text-secondary-500 pt-2 pb-2 mt-5 mb-3'>Send message</button>
-                <p>{message}</p>
-                <div className='flex flex-col items-center justify-center mt-1 text-sm md:text-lg md:mt-[3rem] backdrop-brightness-90 pt-5 pb-5'>
-                <p className='pl-2 pr-2 w-full text-center underline'>Alternative</p>
+                <p className='mb-2'>{message}</p>
+                <Line/>
+                <div className='flex flex-col items-center justify-center  text-sm md:text-lg backdrop-brightness-90 pt-5 pb-5'>
+                <p className='pl-2 pr-2 w-full text-center mb-2 text-xl'>Alternative</p>
                 <p className='pl-2 pr-2 w-full text-center'>Gmail: vijoh01@gmail.com</p>
                 <p className='pl-2 pr-2 w-full text-center'>Phone: +46 76-164 61 20</p>
                 </div>
+            
               </form>
                
             </div>
