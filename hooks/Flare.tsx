@@ -59,7 +59,7 @@ const Flare = () => {
         width: '50rem',
         height: '50rem',
         borderRadius: '50%',
-        background: 'radial-gradient(circle, rgba(222, 222, 222, 0.12), rgba(0, 0, 0, 0))',
+        background: 'radial-gradient(circle, rgba(222, 222, 222, 0.03), rgba(0, 0, 0, 0))',
         backdropFilter: 'blur(0.1px)',
         left: `calc(${position.x}px - 25rem)`,
         top: `calc(${position.y}px - 25rem)`,
