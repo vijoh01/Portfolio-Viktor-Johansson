@@ -13,9 +13,10 @@ export default function Portfolio() {
     
     
     <main className="flex scroll-smooth overflow-hidden bg-fixed">
-      
+      <div className='opacity-0 md:opacity-100'>
       <Flare></Flare>
-      <div className=' flex ml-0 lg:mt-0 lg:ml-20 flex-col max-w-full w-full bg-primary-50 dark:bg-secondary-50 '>
+      </div>
+      <div className=' flex ml-0 lg:mt-0 lg:ml-40 flex-col max-w-full w-full bg-primary-50 dark:bg-secondary-50 '>
       
         <Home/>
    
