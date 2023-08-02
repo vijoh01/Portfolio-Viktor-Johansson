@@ -58,7 +58,7 @@ export default function Nav() {
 
   function test() {
     return (
-      <div className="overflow-hidden min-h-screen w-40 fixed z-40 bg-secondary-50 dark:bg-primary-900 text-primary-900 dark:text-secondary-400 flex flex-col justify-between">
+      <div className="overflow-hidden min-h-screen w-40 fixed mt-10 z-40 bg-secondary-50 dark:bg-primary-900 text-primary-900 dark:text-secondary-400 flex flex-col justify-between">
       <div className="text-3xl flex flex-col mb-5 font-bold">
         {iconsData.map((link) => (
           <div onClick={() => {setActiveNav(true); setActiveSection(link.label);}}>
@@ -110,7 +110,7 @@ export default function Nav() {
       <div className="text-3xl flex lg:flex-col mb-5 font-bold">
         <button
           onClick={handleButtonClick}
-          className="max-[1280px]:visible lg:hidden w-full flex items-center max-[1280px]:mt-2  lg:justify-center lg:mt-5 text-3xl"
+          className="max-[1280px]:visible lg:hidden w-full flex items-center ml-2 lg:justify-center lg:mt-5 text-3xl"
         >
           <BiMenu className="" />
         </button>
@@ -121,7 +121,7 @@ export default function Nav() {
         ))}
         <div className="mt-5"></div>
         <Line />
-        <div className="flex visible  ml-5 mt-3 mb-3 max-[1280px]:mr-4 max-[1280px]:mb-0 max-[1280px]:ml-0">
+        <div className="flex visible  ml-5 mt-3 mb-3 max-[1280px]:mr-10 max-[1280px]:mb-0 max-[1280px]:ml-0">
           <DarkModeToggle />
         </div>
         {showDiv && test()}
