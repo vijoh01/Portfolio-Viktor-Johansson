@@ -110,7 +110,7 @@ export default function Nav() {
       <div className="text-3xl flex lg:flex-col mb-5 font-bold">
         <button
           onClick={handleButtonClick}
-          className="max-[1280px]:visible lg:hidden w-full flex items-center ml-2 lg:justify-center lg:mt-5 text-3xl"
+          className="max-[1280px]:visible lg:hidden w-full flex items-center ml-5 lg:justify-center lg:mt-5 text-3xl"
         >
           <BiMenu className="" />
         </button>
