@@ -105,7 +105,7 @@ export default function Nav() {
   };
 
   return (
-    <nav className="h-12 lg:min-h-screen min-w-10 w-screen lg:min-w-40 lg:w-40 fixed z-20 bg-secondary-50 dark:bg-primary-900 text-primary-900 dark:text-secondary-400 flex flex-col justify-between">
+    <nav className="h-12 lg:min-h-screen min-w-10 w-screen lg:min-w-40 lg:w-40 fixed z-50 bg-secondary-50 dark:bg-primary-900 text-primary-900 dark:text-secondary-400 flex flex-col justify-between">
       
       <div className="text-3xl flex lg:flex-col mb-5 font-bold">
         <button

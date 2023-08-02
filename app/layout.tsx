@@ -1,3 +1,4 @@
+import Nav from '@/components/Nav'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -15,8 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      
-      <body className={inter.className}>{children}</body>
+      <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+      </head>
+      <body className={inter.className}><Nav></Nav>{children}</body>
     </html>
   )
 }

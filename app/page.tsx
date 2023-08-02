@@ -11,8 +11,9 @@ export default function Portfolio() {
   return (
     <>
     
+    
     <main className="flex scroll-smooth overflow-hidden bg-fixed">
-      <Nav></Nav>
+      
       <Flare></Flare>
       <div className=' flex ml-0 lg:mt-0 lg:ml-20 flex-col max-w-full w-full bg-primary-50 dark:bg-secondary-50 '>
       

@@ -68,13 +68,13 @@ export default function Contact() {
             <h1 className='pb-3 text-3xl md:text-4xl'>Get in touch</h1>
               <form className='flex flex-col justify-center w-[70%]'>
                 <label className='ml-1' htmlFor="email">Name</label>
-                <input type="text" name="name" id="name" className='pl-1 pt-1 pb-1 text-[#000]' value={values.name} placeholder='e.g. Alex, Co' onChange={handleChange}  />
+                <input type="text" name="name" id="name" className='pl-1 pt-1 pb-1 text-[#000]' value={values.name} placeholder='e.g. Alex, Co' onChange={handleChange}  required/>
 
                 <label className='ml-1 mt-2' htmlFor="email">Email</label>
-                <input type="email" name="email" id="email" className='pl-1 pt-1 pb-1 text-[#000]' value={values.email} placeholder='example@gmail.com' onChange={handleChange} />
+                <input type="email" name="email" id="email" className='pl-1 pt-1 pb-1 text-[#000]' value={values.email} placeholder='example@gmail.com' onChange={handleChange} required/>
 
                 <label className='ml-1 mt-2' htmlFor="msg">Message</label>
-                <textarea name="msg" id="msg" className='pl-1 max-h-52 min-h-[3rem] text-[#000]' value={values.msg} placeholder='Hey! Im reaching out because..' onChange={handleChange}/>
+                <textarea name="msg" id="msg" className='pl-1 max-h-52 min-h-[3rem] text-[#000]' value={values.msg} placeholder='Hey! Im reaching out because..' onChange={handleChange} required/>
 
                 <button onClick={onSubmit} className='w-full bg-[#101010] text-secondary-500 pt-2 pb-2 mt-5 mb-3'>Send message</button>
                 <p className='mb-2'>{message}</p>

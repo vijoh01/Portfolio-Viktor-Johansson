@@ -44,46 +44,46 @@ export default function Projects() {
       >
       
       <button onMouseOver={() => {handleMouseOver(); setHovered({first: true, second: false, third: false, fourth: false});}} style={hovered.first != true ? { opacity: opacity, transitionDuration: transitionDuration} : {}}
-          onMouseOut={handleMouseOut} onClick={() =>  window.open("https://vijoh01.github.io/fe22-vh-slutprojekt-grupp-6/", '_blank')} className='w-full bg-[#d0b7b2] dark:bg-[#1c1c1c] sm:w-[30rem]  md:w-[40rem] lg:w-[35rem] min-h-[8rem] lg:min-h-[15rem] flex flex-col justify-evenly'>
+          onMouseOut={handleMouseOut} onClick={() =>  window.open("https://vijoh01.github.io/fe22-vh-slutprojekt-grupp-6/", '_blank')} className='w-full bg-[#d0b7b2] dark:bg-[#1c1c1c] sm:w-[30rem]  md:w-[40rem] lg:w-[35rem] min-h-[8rem] lg:min-h-[15rem] flex flex-col items-center justify-evenly'>
           <div className='flex justify-center items-center'>
             <h1 className='mt-2 mb-2'>MsgBoard</h1> 
             <FiArrowUpRight className='ml-2 text-xl' id='arrow' style={hovered.first == true ? { transform: arrowTransform, transitionDuration: transitionDuration} : {}}/>
           </div>
           <div className='flex justify-between items-center flex-col md:flex-row'>
             <Image src={msg} className='w-[15rem] md:ml-5' alt=''></Image>
-            <p className='text-start w-[15rem] md:mr-5 mt-2 mb-2'>Social media app, it allows you to register and post messages that can be seen by anyone.</p>
+            <p className='text-start w-[15rem] md:mr-5 md:ml-5 mt-2 mb-2'>Social media app, it allows you to register and post messages that can be seen by anyone.</p>
           </div>
       </button>
       <button  onClick={() => window.open("https://vijoh01.github.io/FE22-js2-mp2-Viktor-Johansson/", '_blank')} onMouseOver={() => {handleMouseOver(); setHovered({first: false, second: true, third: false, fourth: false});}}
-          onMouseOut={() => {handleMouseOut();}} style={hovered.second !== true ? { opacity: opacity, transitionDuration: transitionDuration} : {filter: 'brightness(1)'}} className='w-full filter bg-[#d0b7b2] dark:bg-[#1c1c1c] sm:w-[30rem] md:w-[40rem] lg:w-[35rem] min-h-[8rem] lg:min-h-[15rem] flex flex-col justify-evenly'>
+          onMouseOut={() => {handleMouseOut();}} style={hovered.second !== true ? { opacity: opacity, transitionDuration: transitionDuration} : {filter: 'brightness(1)'}} className='w-full filter bg-[#d0b7b2] dark:bg-[#1c1c1c] sm:w-[30rem] md:w-[40rem] lg:w-[35rem] min-h-[8rem] lg:min-h-[15rem] flex items-center flex-col justify-evenly'>
           <div className='flex justify-center items-center'>
             <h1 className='mt-2 mb-2'>Tamagotchi</h1> 
             <FiArrowUpRight className='ml-2 text-xl' id='arrow' style={hovered.second == true ? { transform: arrowTransform, transitionDuration: transitionDuration} : {}}/>
           </div>
           <div className='flex justify-between items-center flex-col md:flex-row'>
             <Image src={tamagotchi} className='w-[15rem] md:ml-5' alt=''></Image>
-            <p className='text-start w-[15rem] md:mr-5 mt-2 mb-2'>School project, create your own tamagotchi. It gets hungry, you better feed it..</p>
+            <p className='text-start w-[15rem] md:mr-5 md:ml-5 mt-2 mb-2'>School project, create your own tamagotchi. It gets hungry, you better feed it..</p>
           </div>
       </button>
 
-      <button onClick={() => window.open("https://ignacio-ci.github.io/fe22-vh-projekt1-grupp-5/", '_blank')} onMouseOver={() => {handleMouseOver(); setHovered({first: false, second: false, third: true, fourth: false});}} onMouseOut={handleMouseOut} style={hovered.third != true ? { opacity: opacity, transitionDuration: transitionDuration} : {filter: 'brightness(1)'}} className='w-full filter bg-[#d0b7b2] dark:bg-[#1c1c1c] sm:w-[30rem] md:w-[40rem] lg:w-[35rem] min-h-[8rem] lg:min-h-[15rem] flex flex-col justify-evenly'>
+      <button onClick={() => window.open("https://ignacio-ci.github.io/fe22-vh-projekt1-grupp-5/", '_blank')} onMouseOver={() => {handleMouseOver(); setHovered({first: false, second: false, third: true, fourth: false});}} onMouseOut={handleMouseOut} style={hovered.third != true ? { opacity: opacity, transitionDuration: transitionDuration} : {filter: 'brightness(1)'}} className='w-full filter items-center bg-[#d0b7b2] dark:bg-[#1c1c1c] sm:w-[30rem] md:w-[40rem] lg:w-[35rem] min-h-[8rem] lg:min-h-[15rem] flex flex-col justify-evenly'>
       <div className='flex justify-center items-center'>
             <h1 className='mt-2 mb-2'>Weather</h1> 
             <FiArrowUpRight className='ml-2 text-xl' id='arrow' style={hovered.third == true ? { transform: arrowTransform, transitionDuration: transitionDuration} : {}}/>
           </div>
           <div className='flex justify-between items-center flex-col md:flex-row'>
             <Image src={weather} className='w-[15rem] md:ml-5' alt=''></Image>
-            <p className='text-start w-[15rem] md:mr-5 mt-2 mb-2'>School group project using weather api that allows you to see the weather anywhere.</p>
+            <p className='text-start w-[15rem] md:mr-5 md:ml-5 mt-2 mb-2'>School group project using weather api that allows you to see the weather anywhere.</p>
           </div>
       </button>
-      <button onClick={() => window.open("https://vijoh01.github.io/FE22-js1-mp4-viktor-johansson/", '_blank')} onMouseOver={() => {handleMouseOver(); setHovered({first: false, second: false, third: false, fourth: true});}} onMouseOut={handleMouseOut} style={hovered.fourth != true ? { opacity: opacity, transitionDuration: transitionDuration} : {}} className='w-full filter bg-[#d0b7b2] dark:bg-[#1c1c1c] sm:w-[30rem] md:w-[40rem] lg:w-[35rem] min-h-[8rem] lg:min-h-[15rem] flex flex-col justify-evenly'>
+      <button onClick={() => window.open("https://vijoh01.github.io/FE22-js1-mp4-viktor-johansson/", '_blank')} onMouseOver={() => {handleMouseOver(); setHovered({first: false, second: false, third: false, fourth: true});}} onMouseOut={handleMouseOut} style={hovered.fourth != true ? { opacity: opacity, transitionDuration: transitionDuration} : {}} className='w-full filter bg-[#d0b7b2] dark:bg-[#1c1c1c] items-center sm:w-[30rem] md:w-[40rem] lg:w-[35rem] min-h-[8rem] lg:min-h-[15rem] flex flex-col justify-evenly'>
       <div className='flex justify-center items-center'>
             <h1 className='mt-2 mb-2'>Animation</h1> 
             <FiArrowUpRight className='ml-2 text-xl' id='arrow' style={hovered.fourth == true ? { transform: arrowTransform, transitionDuration: transitionDuration} : {}}/>
           </div>
           <div className='flex justify-between items-center flex-col md:flex-row'>
             <Image src={viktor} className='w-[15rem] md:ml-5' alt=''></Image>
-            <p className='text-start w-[15rem] md:mr-5 mt-2 mb-2'>School project, basic animation</p>
+            <p className='text-start w-[15rem] md:mr-5 md:ml-5 mt-2 mb-2'>School project, basic animation</p>
           </div>
       </button>
       
