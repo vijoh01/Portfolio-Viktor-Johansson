@@ -75,15 +75,10 @@ export default function Contact() {
 
                 <label className='ml-1 mt-2' htmlFor="msg">Message</label>
                 <textarea name="msg" id="msg" className='pl-1 max-h-52 min-h-[3rem] text-[#000]' value={values.msg} placeholder='Hey! Im reaching out because..' onChange={handleChange} required/>
-
+           
                 <button onClick={onSubmit} className='w-full bg-[#101010] text-secondary-500 pt-2 pb-2 mt-5 mb-3'>Send message</button>
                 <p className='mb-2'>{message}</p>
-                <Line/>
-                <div className='flex flex-col items-center justify-center  text-sm md:text-lg backdrop-brightness-90 pt-5 pb-5'>
-                <p className='pl-2 pr-2 w-full text-center mb-2 text-xl'>Alternative</p>
-                <p className='pl-2 pr-2 w-full text-center'>Gmail: vijoh01@gmail.com</p>
-                <p className='pl-2 pr-2 w-full text-center'>Phone: +46 76-164 61 20</p>
-                </div>
+                
             
               </form>
                

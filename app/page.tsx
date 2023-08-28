@@ -16,7 +16,7 @@ export default function Portfolio() {
       <div className='opacity-0 md:opacity-100'>
       <Flare></Flare>
       </div>
-      <div className=' flex ml-0 lg:mt-0 lg:ml-40 flex-col max-w-full w-full bg-primary-50 dark:bg-secondary-50 '>
+      <div className=' flex ml-0 lg:mt-0 lg:ml-20 flex-col max-w-full w-full bg-primary-50 dark:bg-secondary-50 '>
       
         <Home/>
    
