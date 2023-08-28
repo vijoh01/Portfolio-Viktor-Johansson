@@ -3,7 +3,10 @@ import { transporter, mailOptions } from "@/config/nodemailer";
 export default async function handler(req, res) {
   if (req.method === 'POST') {
   const data = req.body;
-
+  if (data.msg == '' || data.name == '' || data.email == '') {
+    res.status(200).json({ message: 'Could not send empty form.' });
+    return;
+  }
   try {
     await transporter.sendMail({
       ...mailOptions,

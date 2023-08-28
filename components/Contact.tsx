@@ -76,7 +76,7 @@ export default function Contact() {
                 <label className='ml-1 mt-2' htmlFor="msg">Message</label>
                 <textarea name="msg" id="msg" className='pl-1 max-h-52 min-h-[3rem] text-[#000]' value={values.msg} placeholder='Hey! Im reaching out because..' onChange={handleChange} required/>
            
-                <button onClick={onSubmit} className='w-full bg-[#101010] text-secondary-500 pt-2 pb-2 mt-5 mb-3'>Send message</button>
+                <button onClick={onSubmit} type='submit' className='w-full bg-[#101010] text-secondary-500 pt-2 pb-2 mt-5 mb-3'>Send message</button>
                 <p className='mb-2'>{message}</p>
                 
             
