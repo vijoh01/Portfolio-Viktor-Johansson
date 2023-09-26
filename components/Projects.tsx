@@ -90,9 +90,6 @@ export default function Projects() {
       </div>
       </div>
 
-      <ScrollLink href={"#section-5"} className='z-10 rounded-full p-3 mb-5 mt-1 bg-secondary-50 dark:bg-secondary-100 text-primary-50 dark:text-primary-100 self-center'>
-        <BiDownArrowAlt className='rounded-full'></BiDownArrowAlt>
-      </ScrollLink>
     </main>
   );
 }

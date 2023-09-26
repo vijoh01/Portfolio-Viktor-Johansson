@@ -14,12 +14,13 @@ const ScrollLink = ({ children, ...props }: ScrollLinkProps) => {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
     
+    const btn:any = e.target;
     // Log the click event here
     const targetId = e.currentTarget.href.replace(/.*\#/, "");
     const elem = document.getElementById(targetId);
     const topOffset = elem?.getBoundingClientRect().top || 0;
     const currentScrollY = window.scrollY || window.pageYOffset;
-
+    
     window.scrollTo({
       top: currentScrollY + topOffset,
       behavior: "smooth",

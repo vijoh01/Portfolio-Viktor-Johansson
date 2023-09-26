@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import { BiHome, BiUser, BiMenu, BiHomeSmile, BiBookBookmark, BiBookContent } from 'react-icons/bi';
+import { BiHome, BiUser, BiMenu, BiHomeSmile, BiBookBookmark, BiBookContent, BiUpArrowAlt } from 'react-icons/bi';
 import { BsFillPersonFill,BsJournalBookmark,BsJournalBookmarkFill} from 'react-icons/bs'
 import {AiOutlineProject, AiFillProject, AiOutlinePhone, AiTwotonePhone, AiTwotoneHome, AiOutlineHome} from 'react-icons/ai'
 import {MdOutlinePanoramaWideAngleSelect, MdOutlinePanoramaWideAngle} from 'react-icons/md'
@@ -31,6 +31,7 @@ export default function Nav() {
     function checkSection() {
       if (window.scrollY < (900 * window.innerHeight) / 1000) {
         !nav ? setActiveSection("Home") : '';
+        
       } if (window.scrollY > (900 * window.innerHeight) / 1000 && window.scrollY < ((900*2) * window.innerHeight) / 1000) {
         !nav ? setActiveSection("About Me") : '';
       } if (window.scrollY > ((900*2) * window.innerHeight) / 1000 && window.scrollY < ((900*3) * window.innerHeight) / 1000) {
@@ -124,6 +125,7 @@ export default function Nav() {
         <div className="flex visible  ml-5 mt-3 mb-3 max-[1280px]:mr-10 max-[1280px]:mb-0 max-[1280px]:ml-0">
           <DarkModeToggle />
         </div>
+        
         {showDiv && test()}
       </div>
     </nav>

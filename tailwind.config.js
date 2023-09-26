@@ -56,8 +56,13 @@ module.exports = {
       fadein_bottom: 'fadein_bottom 1s ease-in-out',
       color: 'color 1s infinite alternate',
       shadow: 'shadow 5s infinite alternate',
+      fade: 'fade 2s ease-in-out alternate',
+      scale: 'scale 1.5s alternate infinite ease',
+      bounce_arrow: 'bounce_arrow 1.5s alternate infinite'
     },
- 
+    boxShadow: {
+      'image': '0 0 8px 8px white inset',
+    },
     keyframes: {
         fadein_left: {
           '0%': { transform: 'translateX(-100rem)' },
@@ -65,12 +70,25 @@ module.exports = {
           '85%': { transform: 'translateX(-1rem)'},
           '100%': { transform: 'translateX(0rem)'},
         },
+        scale: {
+          
+          '100%': { transform: 'scale(1.1)' }
+        },
+        bounce_arrow: {
+          '0%': { transform: 'translateY(-1px)' },
+          '100%': { transform: 'translateY(1px)' }
+        },
         shadow: {
           '0%': { filter: 'drop-shadow(0 0 70px #0e0a09)' },
           '25%': {  filter: 'drop-shadow(0 0 70px #0e0a09)' },
           '50%': { filter: 'drop-shadow(0 0 70px #0e0a09)' },
           '75%': { filter: 'drop-shadow(0 0 70px #0e0a09)' },
           '100%': { filter: 'drop-shadow(0 0 70px #0e0a09)' },
+        },
+        fade: {
+          '0%': { opacity: 1 },
+          '50%': { opacity: 0 },
+          '100%': { opacity: 1 },
         },
         color: {
           '0%': { filter: 'hue-rotate(0deg)' },

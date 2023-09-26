@@ -83,9 +83,7 @@ export default function Contact() {
               </form>
                
             </div>
-            <ScrollLink href={"#section-1"} className='z-10 rounded-full p-3 mb-5 mt-5 bg-secondary-50 dark:bg-secondary-100 text-primary-50 dark:text-primary-100 self-center'>
-              <BiUpArrowAlt className='rounded-full'></BiUpArrowAlt>
-            </ScrollLink>
+           
         </main>
     )
 }
