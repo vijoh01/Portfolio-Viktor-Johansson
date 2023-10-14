@@ -56,7 +56,7 @@ export function Home() {
               <path  className="fill-current filter brightness-[0.4] dark:brightness-100 " fill="url(#gradient)" d="M52,22.09a29.27,29.27,0,0,1,8.69-4.59c7.26-2.4,15-2.25,22.57-2.09,21,.43,43.79,1.56,59.95,16.13,8,7.25,13.57,17.16,19,26.87Q174,79.66,185.77,100.93c2.36,4.25,4.76,8.64,5.59,13.53,1.18,7-1.05,14.2-4.83,19.94s-9,10.19-14.42,14.12c-18.13,13.23-39.38,21.9-61.2,22.72S66.73,164.62,50.29,149c-10.18-9.66-17.83-22-25.08-34.42-6.74-11.47-13.44-23.73-14.09-37.3-.68-14.66,6.08-29,16-39A75.74,75.74,0,0,1,52,22.09Z" />
             </svg>
    
-            <Image  className='-translate-x-28 contrast-[1.05] pointer-events-none filter grayscale-[1] brightness-[1.2] dark:brightness-[1.2] min-w-[24rem] w-[24rem] md:min-w-[28rem] lg:min-w-[35rem] lg:scale-150 -translate-y-10 scale-[1.15] md:scale-[1.4] md:-translate-y-14  lg:-translate-y-[3.53rem]' src={viktor} alt='dasd'></Image>
+            <Image  className='-translate-x-28 contrast-[1.05] pointer-events-none filter grayscale-[0.12] brightness-[1.2] dark:brightness-[1.2] min-w-[24rem] w-[24rem] md:min-w-[28rem] lg:min-w-[35rem] lg:scale-150 -translate-y-10 scale-[1.15] md:scale-[1.4] md:-translate-y-14  lg:-translate-y-[3.53rem]' src={viktor} alt='dasd'></Image>
          
           </div>
         </motion.div>
